@@ -1,5 +1,7 @@
 # 42-libft-extended
 
+<img src ="https://img.shields.io/badge/Norminette-OK-blue?style=plastic"/>
+
 ## What about
 libft extened includes the base libft (pretty much our own libc) where I added usefull functions and structures along my Jedai path towards the light of code.
 
