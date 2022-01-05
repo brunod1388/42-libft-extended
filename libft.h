@@ -66,6 +66,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_strcmp(const char *s1, const char *s2);
 
 int		ft_atoi(const char *str);
+long	ft_atol(const char *str);
 t_uint	ft_atoi_base(const char *str, const char *base);
 t_uint	ft_hextoi(const char *str);
 int		ft_ilen(int n);
