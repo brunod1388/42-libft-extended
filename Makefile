@@ -6,7 +6,7 @@
 #    By: bgoncalv <bgoncalv@student.42lausanne.ch>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/03 19:39:23 by bgoncalv          #+#    #+#              #
-#    Updated: 2022/01/03 19:56:30 by bgoncalv         ###   ########.fr        #
+#    Updated: 2022/01/05 17:47:40 by bgoncalv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -101,7 +101,7 @@ all:		$(NAME)
 re:			fclean $(NAME)
 
 clean:
-			@$(RM) *.o */*.o printf/*.o lst/*.o dlst/*.o
+			@$(RM) *.o */*.o
 			@printf "$(_PURPLE)libft object	deleted$(_END)\n"
 
 fclean:		clean
