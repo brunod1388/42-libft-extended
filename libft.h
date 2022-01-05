@@ -132,6 +132,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 void	*ft_getnblist(t_list *lst, int nb);
 
 t_dlist	*ft_dlnew(void);
+t_dlist	*ft_dlcpy(t_dlist *dl, void *(*f)(void *));
 t_dlist	*ft_dladdfirst(t_dlist *dl, void *content);
 t_dlist	*ft_dladdlast(t_dlist *dl, void *content);
 t_node	*ft_dlpushfirst(t_dlist *dl);
