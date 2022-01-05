@@ -37,3 +37,23 @@ int	ft_atoi(const char *str)
 	}
 	return (nb * is_negative);
 }
+
+long	ft_atol(const char *str)
+{
+	long	nb;
+	long	is_negative;
+
+	nb = 0;
+	is_negative = 1;
+	while (ft_isspace(*str))
+		str++;
+	if (*str == '-' || *str == '+')
+		if (*str++ == '-')
+			is_negative = -is_negative;
+	while (*str != '\0' && '0' <= *str && *str <= '9')
+	{
+		nb = (long)(*str - '0') + (10 * nb);
+		str++;
+	}
+	return (nb * is_negative);
+}
