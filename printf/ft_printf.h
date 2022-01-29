@@ -6,13 +6,13 @@
 /*   By: bgoncalv <bgoncalv@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 17:33:36 by bgoncalv          #+#    #+#             */
-/*   Updated: 2021/12/05 01:12:24 by bgoncalv         ###   ########.fr       */
+/*   Updated: 2022/01/29 15:23:15 by bgoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
-# include "../libft.h"
+# include "libft.h"
 # include <stdarg.h>
 # define FORMAT_LIST "cfspdiuxX%"
 # define FLAGS_LIST "-# +0"

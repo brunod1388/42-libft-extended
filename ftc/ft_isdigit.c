@@ -6,11 +6,11 @@
 /*   By: bgoncalv <bgoncalv@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 17:41:56 by bgoncalv          #+#    #+#             */
-/*   Updated: 2021/12/05 02:57:31 by bgoncalv         ###   ########.fr       */
+/*   Updated: 2022/01/29 15:23:15 by bgoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

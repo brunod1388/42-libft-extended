@@ -6,11 +6,11 @@
 /*   By: bgoncalv <bgoncalv@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 02:17:29 by bgoncalv          #+#    #+#             */
-/*   Updated: 2021/11/24 22:50:26 by bgoncalv         ###   ########.fr       */
+/*   Updated: 2022/01/29 15:23:15 by bgoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 void	ft_bubsort(int i_tab[], int n)
 {

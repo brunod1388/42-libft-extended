@@ -6,11 +6,11 @@
 /*   By: bgoncalv <bgoncalv@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 15:27:51 by bgoncalv          #+#    #+#             */
-/*   Updated: 2021/11/21 22:47:44 by bgoncalv         ###   ########.fr       */
+/*   Updated: 2022/01/29 15:23:15 by bgoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 t_node	*ft_dlpushfirst(t_dlist *dl)
 {

@@ -6,11 +6,11 @@
 /*   By: bgoncalv <bgoncalv@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 17:21:49 by bgoncalv          #+#    #+#             */
-/*   Updated: 2021/12/13 23:39:20 by bgoncalv         ###   ########.fr       */
+/*   Updated: 2022/01/29 15:23:15 by bgoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {

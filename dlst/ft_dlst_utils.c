@@ -6,11 +6,11 @@
 /*   By: bgoncalv <bgoncalv@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 15:27:48 by bgoncalv          #+#    #+#             */
-/*   Updated: 2022/01/05 17:46:47 by bgoncalv         ###   ########.fr       */
+/*   Updated: 2022/01/29 15:20:47 by bgoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 int	ft_dlisordered(t_dlist *dl, int (*f)(t_node *, t_node *))
 {
