@@ -6,7 +6,7 @@
 /*   By: bgoncalv <bgoncalv@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 14:54:02 by bgoncalv          #+#    #+#             */
-/*   Updated: 2022/01/29 15:23:15 by bgoncalv         ###   ########.fr       */
+/*   Updated: 2022/01/30 18:15:17 by bgoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,74 +24,14 @@ t_dlist	*ft_dlnew(void)
 	dl->last = NULL;
 	return (dl);
 }
-
-t_dlist	*ft_dladdfirst(t_dlist *dl, void *content)
+void	ft_dlinit(t_dlist *dl)
 {
-	t_node	*node;
-
-	if (!dl)
-		dl = ft_dlnew();
-	node = malloc(sizeof(t_node));
-	if (!node)
-		return (dl);
-	node->prev = NULL;
-	node->next = dl->first;
-	node->content = content;
-	if (dl->first)
-	{
-		dl->first->prev = node;
-		dl->first = node;
-	}
-	else
-	{
-		dl->first = node;
-		dl->last = node;
-	}
-	if (node)
-		dl->length++;
-	return (dl);
+	dl->length = 0;
+	dl->first = NULL;
+	dl->last = NULL;
 }
 
-t_dlist	*ft_dladdlast(t_dlist *dl, void *content)
-{
-	t_node	*node;
-
-	if (!dl)
-		dl = ft_dlnew();
-	node = malloc(sizeof(t_node));
-	if (!node || !dl)
-		return (dl);
-	node->prev = dl->last;
-	node->next = NULL;
-	node->content = content;
-	if (dl->last)
-	{
-		dl->last->next = node;
-		dl->last = node;
-	}
-	else
-	{
-		dl->first = node;
-		dl->last = node;
-	}
-	if (node)
-		dl->length++;
-	return (dl);
-}
-
-void	*ft_dlgetcontent(t_dlist *dl, size_t i)
-{
-	t_node	*node;
-
-	if (!dl || i > dl->length)
-		return (NULL);
-	node = dl->first;
-	while (i--)
-		node = node->next;
-	return (node->content);
-}
-
-void	ft_dlclear(t_dlist **dl)
+void	ft_dlclear(t_dlist **dl, void (*f)(void *))
 {
 	t_node	*current;
 	t_node	*next;
@@ -102,7 +42,7 @@ void	ft_dlclear(t_dlist **dl)
 	while (current)
 	{
 		next = current->next;
-		free(current->content);
+		f(current->content);
 		free(current);
 		current = next;
 	}

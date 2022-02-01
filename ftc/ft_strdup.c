@@ -6,7 +6,7 @@
 /*   By: bgoncalv <bgoncalv@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 17:33:45 by bgoncalv          #+#    #+#             */
-/*   Updated: 2022/01/29 15:23:15 by bgoncalv         ###   ########.fr       */
+/*   Updated: 2022/01/30 17:42:54 by bgoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ char	*ft_strdup(const char *src)
 {
 	char	*dest;
 
+	if (!src)
+		return (NULL);
 	dest = malloc(ft_strlen(src) + 1);
 	if (dest == NULL)
 		return (NULL);

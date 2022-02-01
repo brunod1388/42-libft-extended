@@ -6,7 +6,7 @@
 /*   By: bgoncalv <bgoncalv@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 17:21:49 by bgoncalv          #+#    #+#             */
-/*   Updated: 2022/01/03 19:55:51 by bgoncalv         ###   ########.fr       */
+/*   Updated: 2022/01/30 18:20:59 by bgoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -133,6 +133,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 void	*ft_getnblist(t_list *lst, int nb);
 
 t_dlist	*ft_dlnew(void);
+void	ft_dlinit(t_dlist *dl);
 t_dlist	*ft_dlcpy(t_dlist *dl, void *(*f)(void *));
 t_dlist	*ft_dladdfirst(t_dlist *dl, void *content);
 t_dlist	*ft_dladdlast(t_dlist *dl, void *content);
@@ -142,7 +143,7 @@ t_dlist	*ft_dlputfirst(t_dlist *dl, t_node *node);
 t_dlist	*ft_dlputlast(t_dlist *dl, t_node *node);
 int		ft_dlisordered(t_dlist *dl, int (*f)(t_node *, t_node *));
 void	*ft_dlgetcontent(t_dlist *dl, size_t i);
-void	ft_dlclear(t_dlist **dl);
+void	ft_dlclear(t_dlist **dl, void (*f)(void *));
 void	ft_printdlsti(t_dlist *dl, int rev, int (*f)(t_node *, t_node *));
 
 int		ft_sqrt(int n);
