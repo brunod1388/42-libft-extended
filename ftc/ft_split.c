@@ -77,4 +77,5 @@ void	ft_clearsplit(char **split)
 		free(split[i]);
 		i++;
 	}
+	free(split);
 }
